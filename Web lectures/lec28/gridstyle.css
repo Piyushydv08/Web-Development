@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(69, 62, 62);
+    border: 5px solid rgb(217, 202, 202);
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 4rem;
+    /* justify-items: center;
+    align-items: start; */
+    place-items: center;
+}
+
+/* 
+In grid,
+justify - it place elements in horizontal direction
+align - it place elements in vertical direction
+place-self/itemms - it place  items in both horizontal and vertical */
+
+.item{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(132, 154, 154);
+    border: 5px solid rgb(217, 202, 202);
+    /* justify-self: end; */
+    /* align-self: end; */
+    place-self: center;
+}
